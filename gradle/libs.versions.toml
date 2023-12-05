@@ -1,0 +1,27 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.20"
+jetpack-compose = "1.5.4"
+compose-compiler = "1.5.4"
+jetpack-compose-material3 = "1.1.2"
+androidx-activityCompose = "1.8.0"
+coroutines = "1.7.3"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+# Android
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+jetpack-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "jetpack-compose" }
+jetpack-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "jetpack-compose" }
+jetpack-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "jetpack-compose" }
+jetpack-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "jetpack-compose" }
+jetpack-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "jetpack-compose-material3" }
+# Coroutines
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
